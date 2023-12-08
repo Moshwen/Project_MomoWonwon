@@ -1,1 +1,1 @@
-# Sa se pou projet nou yo. Mete Kod devwa w yo sou sa. 
+# Режист Моиз - Файл Moise_Streamlit.py содержит код для web-приложения на streamlit. Модель машинного обучения определяет тональность текста.
