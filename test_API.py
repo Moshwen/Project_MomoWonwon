@@ -6,7 +6,7 @@ client = TestClient(app)
 
 def test_read_predict_positive():
     response = client.post("/predict/",
-                           json={"text": "Я люблю машинное обучение"}
+                           json=["text", "Я люблю машинное обучение"]
                            )
     json_data = response.json()
 
@@ -16,7 +16,7 @@ def test_read_predict_positive():
 
 def test_read_predict_negative():
     response = client.post("/predict/",
-                           json={"text": "Я ненавижу запад"}
+                           json=["text", "Я ненавижу запад"]
                            )
     json_data = response.json()
 
