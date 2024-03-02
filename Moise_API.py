@@ -19,7 +19,7 @@ def root():
 
 @app.post("/predict/")
 def predict(item: Item):
-    if item.text == '' :
+    if item.text == '':
         return 'Текст не введен'
-    else :
+    else:
         return pipe(item.text)[0]
