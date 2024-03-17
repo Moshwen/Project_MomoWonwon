@@ -6,9 +6,9 @@ client = TestClient(app)
 def test_read_predict_positive():
     response = client.post("/predict/", json={"text": "Я люблю машинное обучение"})
     assert response.status_code == 200
-    assert response.json() == {"label": "POSITIVE"}
+    assert response.json() == {"label": "POSITIVE","score": "0.95"}
 
 def test_read_predict_negative():
     response = client.post("/predict/", json={"text": "Я ненавижу запад"})
     assert response.status_code == 200
-    assert response.json() == {"label": "NEGATIVE"}
+    assert response.json() == {"label": "NEGATIVE","score": "0.95"}
