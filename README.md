@@ -1,1 +1,1 @@
-# Режист Моиз - Файл Moise_API.py содержит код для API. Модель машинного обучения определяет тональность текста.
+[![Tests](https://github.com/sozykin/ml_fastapi_tests/actions/workflows/python-app.yml/badge.svg)](https://github.com/andlarionov/WhisperModel/actions)
